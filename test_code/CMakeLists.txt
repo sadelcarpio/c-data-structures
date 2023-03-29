@@ -4,7 +4,7 @@ project(data_structures C)
 include(CTest)
 enable_testing()
 
-add_executable(linked_lists main.c linked_list.c)
+add_executable(test_code main.c)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})

@@ -1,2 +1,2 @@
-# c-algorithms
-Repo for advanced C ds and algorithms
+# c-data-structures
+Repo for advanced C data structures. Documentation to be defined.

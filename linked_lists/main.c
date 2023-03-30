@@ -4,7 +4,7 @@
 
 
 int main() {
-    LinkedList * ll;
+    LinkedList *ll;
     ll = (LinkedList *) malloc(sizeof(LinkedList));  // Es un puntero a un LinkedList
     init_list(ll);
     prepend(ll, 3);
@@ -18,8 +18,12 @@ int main() {
         append(ll, i + 4);
     }
     pop_first(ll);
-    printf("%d\n", length(ll));
+    printf("Linked List length: %d\n", length(ll));
     print_list(ll);
-    Node * retrieved_node = get(ll, 2);
+    Node *retrieved_node = get(ll, 2);
     printf("You have selected node with value %d\n", retrieved_node->val);
+    reverse(ll);
+    print_list(ll);
+    Node *retrieved_reversed_node = get(ll, 2);
+    printf("After reversing, you have selected node with value %d\n", retrieved_reversed_node->val);
 }

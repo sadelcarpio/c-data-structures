@@ -8,7 +8,7 @@ typedef struct {
     Node *tail;
 } LinkedList;
 
-Node *create_node(int);
+Node *create_node(int val);
 
 void init_list(LinkedList *);
 
@@ -16,9 +16,9 @@ void print_list(LinkedList *);
 
 int length(LinkedList *);
 
-void prepend(LinkedList *, int);
+void prepend(LinkedList *, int val);
 
-void append(LinkedList *, int);
+void append(LinkedList *, int val);
 
 int pop_first(LinkedList *);
 
@@ -26,4 +26,4 @@ int pop(LinkedList *);
 
 void reverse(LinkedList *);
 
-Node *get(LinkedList *, int);
+Node *get(LinkedList *, int index);

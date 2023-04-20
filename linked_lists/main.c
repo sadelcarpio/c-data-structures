@@ -15,7 +15,7 @@ int main() {
     prepend(ll, 25);
     append(ll, 10);
     for (int i = 0; i < 10; ++i) {
-        append(ll, i + 4);
+        append(ll, i + 5);
     }
     pop_first(ll);
     printf("Linked List length: %d\n", length(ll));
@@ -26,4 +26,5 @@ int main() {
     print_list(ll);
     Node *retrieved_reversed_node = get(ll, 2);
     printf("After reversing, you have selected node with value %d\n", retrieved_reversed_node->val);
+    free(ll);
 }

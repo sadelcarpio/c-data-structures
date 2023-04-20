@@ -14,8 +14,9 @@ Node *create_node(int val) {
 
 // Linked list creation
 void init_list(LinkedList *ll) {
-    ll->head = NULL;
-    ll->tail = NULL;
+//    ll->head = NULL;
+//    ll->tail = NULL;
+    *ll = (LinkedList) {.tail = NULL, .head = NULL};  // Designated initializer
 }
 
 void print_list(LinkedList *ll) {
